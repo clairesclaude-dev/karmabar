@@ -9,7 +9,7 @@
      Defaults below describe the Home page.
      ============================================================ -->
 <title>Karma Bar + Kitchen — A proper dive in North Knoxville</title>
-<meta name="description" content="Karma Bar + Kitchen is a neighborhood dive bar in North Knoxville. Cold beer, cocktails, pool, darts, and a pet-friendly patio. Open seven days at 815 Merchant Drive.">
+<meta name="description" content="Karma Bar + Kitchen is a non-smoking neighborhood dive bar in North Knoxville. Cold beer, cocktails, pool, darts, and a pet-friendly patio. Open seven days at 815 Merchant Drive.">
 <meta name="author" content="Karma Bar + Kitchen">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://karmabarknox.com/">
@@ -55,7 +55,8 @@
   "email": "teamkarma@karmaforall.com",
   "priceRange": "$$",
   "servesCuisine": ["American", "Pub Food", "Burgers", "Wings", "Sandwiches"],
-  "description": "A proper dive bar in North Knoxville. Cold beer, cocktails, pool, darts, and a pet-friendly patio. Open seven days.",
+  "description": "A non-smoking dive bar in North Knoxville. Cold beer, cocktails, pool, darts, and a pet-friendly patio. Open seven days.",
+  "smokingAllowed": false,
   "slogan": "For all.",
   "address": {
     "@type": "PostalAddress",
@@ -71,6 +72,7 @@
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "11:00", "closes": "02:00" }
   ],
   "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Non-Smoking / Smoke-Free", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Full Bar", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Happy Hour", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Outdoor Seating", "value": true },
@@ -109,39 +111,30 @@
       "@type": "MenuSection",
       "name": "Apps & Shareables",
       "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Potato Skins", "offers": { "@type": "Offer", "price": "12.13", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Cheezz Sticks", "offers": { "@type": "Offer", "price": "10.40", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Cheezz Chonks", "offers": { "@type": "Offer", "price": "10.40", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Fried Bloody Mary Pickles", "offers": { "@type": "Offer", "price": "10.40", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Mini Corn Dog Basket", "offers": { "@type": "Offer", "price": "10.40", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Spring Rolls", "offers": { "@type": "Offer", "price": "9.10", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Truffle Chips", "offers": { "@type": "Offer", "price": "7.15", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "House Salad", "offers": { "@type": "Offer", "price": "6.69", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Truffle Fries", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Sweet Fries", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Stick O' Shrimp", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "USD" } }
+        { "@type": "MenuItem", "name": "Spring Rolls", "description": "The Ho family's recipe, fried crispy & served with sweet chili sauce for dipping.", "offers": { "@type": "Offer", "price": "9.10", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Cheezz Sticks", "description": "Hand-cut, breaded premium mozzarella fried crispy. Served with house-made tomato gravy or ranch for dipping.", "offers": { "@type": "Offer", "price": "10.40", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Potato Skins", "description": "Crispy potato halves topped with melted cheddar-jack & bacon, with house-made ranch. Step them up to Philly-Style.", "offers": { "@type": "Offer", "price": "11.70", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Truffle Fries", "description": "Crispy, fried shoestring potatoes dusted with our black truffle seasoning.", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "House Salad", "description": "Baby field greens, tomato, carrot, cucumber, sweet onion & cheddar-jack. Your choice of dressing.", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "USD" } }
       ]
     },
     {
       "@type": "MenuSection",
       "name": "Burgers & Sandwiches",
       "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Okie Smash Burger Double", "offers": { "@type": "Offer", "price": "17.05", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Philly", "offers": { "@type": "Offer", "price": "15.47", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Classic BLT", "offers": { "@type": "Offer", "price": "13.48", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Okie Smash Burger Single", "offers": { "@type": "Offer", "price": "13.37", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "The Huey", "offers": { "@type": "Offer", "price": "13.03", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Griddled Frank", "offers": { "@type": "Offer", "price": "12.13", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Jane's Grilled Cheese", "offers": { "@type": "Offer", "price": "9.10", "priceCurrency": "USD" } }
+        { "@type": "MenuItem", "name": "Okie Smash Burger Double", "description": "Two Angus patties & onions smashed & griddled on a toasted brioche bun with lettuce, tomato, American cheese & house burger sauce.", "offers": { "@type": "Offer", "price": "15.60", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Philly", "description": "Thinly sliced sirloin or chicken sauteed with bell pepper, onion & mushroom, melty cheese blend on a griddled hoagie.", "offers": { "@type": "Offer", "price": "14.30", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Okie Smash Burger Single", "description": "Angus patty & onions smashed & griddled on a toasted brioche bun with lettuce, tomato, American cheese & house burger sauce.", "offers": { "@type": "Offer", "price": "11.70", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "The Huey", "description": "1/2-inch Cajun-spiced bologna, scored & fried, on a griddled brioche bun with American cheese, onion, tomato, lettuce, pickle, mayo & mustard.", "offers": { "@type": "Offer", "price": "11.70", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Griddled Frank", "description": "Nathan's all-beef hot dog scored & griddled on a toasted New England bun with mustard & fresh onion, plus hot dog chili sauce.", "offers": { "@type": "Offer", "price": "11.70", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Jane's Grilled Cheese", "description": "Deli-American cheese melted between two slices of butter-griddled sourdough.", "offers": { "@type": "Offer", "price": "9.10", "priceCurrency": "USD" } }
       ]
     },
     {
       "@type": "MenuSection",
-      "name": "Tenders, Wings & Baskets",
+      "name": "Wings",
       "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Traditional Wings (10)", "offers": { "@type": "Offer", "price": "19.50", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Traditional Wings (5)", "offers": { "@type": "Offer", "price": "13.00", "priceCurrency": "USD" } },
-        { "@type": "MenuItem", "name": "Chicken Tender Basket", "offers": { "@type": "Offer", "price": "12.70", "priceCurrency": "USD" } }
+        { "@type": "MenuItem", "name": "Traditional Wings (10)", "description": "All-natural, bone-in jumbo wings fried crispy & tossed in your choice of sauce or rub. Served with celery, carrots & ranch or bleu cheese.", "offers": { "@type": "Offer", "price": "19.50", "priceCurrency": "USD" } }
       ]
     }
   ]
@@ -156,6 +149,8 @@
   "mainEntity": [
     { "@type": "Question", "name": "Where is Karma Bar?",
       "acceptedAnswer": { "@type": "Answer", "text": "815 Merchant Drive, Knoxville, TN 37912. Free parking on site." } },
+    { "@type": "Question", "name": "Is Karma Bar non-smoking?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Karma Bar + Kitchen is now a non-smoking, smoke-free bar inside. The patio stays pet-friendly, and we're open seven days at 815 Merchant Drive." } },
     { "@type": "Question", "name": "When is happy hour at Karma Bar?",
       "acceptedAnswer": { "@type": "Answer", "text": "Drink happy hour is every day from 2 to 6. Food happy hour is Monday through Friday from 4 to 7." } },
     { "@type": "Question", "name": "Is Karma Bar dog friendly?",
@@ -338,8 +333,8 @@ section { padding: var(--pad-section) 0; }
 }
 .nav-links a, .nav-tel {
   font-family: var(--font-punch);
-  font-size: 14px;
-  letter-spacing: 0.15em;
+  font-size: 16px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--karma-cream);
   padding: 8px 4px;
@@ -349,7 +344,8 @@ section { padding: var(--pad-section) 0; }
 .nav-tel { color: var(--karma-amber); margin-right: 16px; }
 .nav-cta {
   font-family: var(--font-punch);
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 10px 18px;
@@ -529,18 +525,18 @@ section { padding: var(--pad-section) 0; }
 .find-info dl { margin-top: 24px; }
 .find-info dt {
   font-family: var(--font-punch);
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--karma-amber);
   margin-top: 24px;
 }
 .find-info dt:first-child { margin-top: 0; }
-.find-info dd { font-size: 17px; line-height: 1.5; margin-top: 6px; }
+.find-info dd { font-size: 19px; line-height: 1.6; margin-top: 6px; }
 .find-info dd a { border-bottom: 1px solid transparent; transition: border-color 0.15s; }
 .find-info dd a:hover { border-color: var(--karma-amber); }
 .find-info .phone { color: var(--karma-amber); font-size: 22px; font-weight: 500; }
-.hours-table { font-size: 15px; line-height: 1.7; }
+.hours-table { font-size: 17px; line-height: 1.7; }
 .hours-table .today { color: var(--karma-amber); font-weight: 500; }
 
 /* ============================================================
@@ -724,19 +720,19 @@ section { padding: var(--pad-section) 0; }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 48px;
 }
-@media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 32px; } }
+@media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 28px; } }
 .contact-info dt {
   font-family: var(--font-punch);
-  font-size: 13px;
-  letter-spacing: 0.15em;
+  font-size: 15px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--karma-amber);
-  margin-top: 24px;
+  margin-top: 18px;
 }
 .contact-info dt:first-child { margin-top: 0; }
-.contact-info dd { font-size: 17px; margin-top: 6px; }
+.contact-info dd { font-size: 19px; margin-top: 6px; line-height: 1.5; }
 .contact-info .phone-big {
   font-family: var(--font-display);
   font-size: clamp(28px, 4vw, 40px);
@@ -750,8 +746,8 @@ section { padding: var(--pad-section) 0; }
   border: 1px solid var(--karma-rule);
 }
 .contact-form-wrap {
-  margin-top: 96px;
-  padding-top: 48px;
+  margin-top: 56px;
+  padding-top: 36px;
   border-top: 1px solid var(--karma-rule);
 }
 .accordion-trigger {
@@ -775,11 +771,11 @@ section { padding: var(--pad-section) 0; }
 .form-field label {
   display: block;
   font-family: var(--font-punch);
-  font-size: 12px;
-  letter-spacing: 0.15em;
+  font-size: 13px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--karma-muted);
-  margin-bottom: 8px;
+  color: var(--karma-cream);
+  margin-bottom: 6px;
 }
 .form-field input, .form-field textarea {
   width: 100%;
@@ -979,12 +975,13 @@ footer {
   font-size: 10px;
 }
 .polaroid-caption {
-  position: absolute; bottom: 16px; left: 14px; right: 14px;
+  position: absolute; bottom: 12px; left: 10px; right: 10px;
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 12px; letter-spacing: 0.1em;
+  font-size: 15px; letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--karma-purple); font-weight: 500;
+  color: var(--karma-cream); font-weight: 600;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.8);
 }
 
 /* ============================================================
@@ -997,6 +994,23 @@ footer {
   align-items: end;
 }
 .hero-gallery { align-self: end; }
+.smoke-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 9px 14px;
+  background: rgba(95, 99, 52, 0.16);
+  border: 1px solid var(--karma-amber);
+  border-radius: 8px;
+  color: var(--karma-cream);
+  font-family: var(--font-punch);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+}
+.smoke-badge strong { color: var(--karma-amber); }
+.smoke-badge-dot { font-size: 15px; line-height: 1; }
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-gallery { order: 2; }
@@ -1011,15 +1025,16 @@ footer {
 .hero-for-all {
   display: inline-block;
   font-family: var(--font-punch);
-  font-size: clamp(21px, 2.1vw, 27px);
-  letter-spacing: 0.18em;
+  font-size: clamp(26px, 2.7vw, 34px);
+  letter-spacing: 0.16em;
   color: var(--karma-amber);
   text-transform: uppercase;
-  vertical-align: 0.85em;
-  margin-left: 18px;
+  vertical-align: 0.35em;
+  margin-left: 14px;
   font-weight: 400;
 }
 .hero-for-all::after { content: '.'; }
+.hero-kitchen { font-size: 0.5em; letter-spacing: 0.04em; font-weight: inherit; vertical-align: 0.14em; }
 
 /* ============================================================
    INSTAGRAM SECTION — horizontal scroll
@@ -1077,7 +1092,7 @@ footer {
 .hh-banner {
   background: var(--karma-amber);
   color: var(--karma-black);
-  padding: clamp(28px, 4vw, 40px) var(--pad-inner);
+  padding: clamp(18px, 2.6vw, 28px) var(--pad-inner);
   text-align: center;
 }
 .hh-banner-eyebrow {
@@ -1099,16 +1114,17 @@ footer {
 .hh-banner-times {
   display: flex;
   justify-content: center;
-  gap: clamp(24px, 4vw, 64px);
-  margin-top: 16px;
+  gap: clamp(20px, 3.5vw, 56px);
+  margin-top: 10px;
   flex-wrap: wrap;
   font-family: var(--font-punch);
-  font-size: clamp(15px, 1.6vw, 20px);
-  letter-spacing: 0.12em;
+  font-size: clamp(19px, 2vw, 26px);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--karma-black);
+  font-weight: 600;
 }
-.hh-banner-times span small { display: block; font-size: 12px; opacity: 0.7; margin-top: 2px; letter-spacing: 0.18em; }
+.hh-banner-times span small { display: block; font-size: 14px; opacity: 0.72; margin-top: 3px; letter-spacing: 0.16em; }
 
 /* ============================================================
    MENU PAGE 2-COL HERO
@@ -1147,6 +1163,7 @@ footer {
   background: var(--karma-purple);
   color: #ffffff;
   border-color: var(--karma-purple);
+  font-weight: 700;
 }
 .nav-cta:hover, .nav-cta:focus-visible {
   background: var(--karma-amber);
@@ -1179,6 +1196,18 @@ footer {
 .footer-logo-wrap { padding-top: 24px; padding-bottom: 16px; }
 .footer-logo-wrap .karma-mark { filter: none; }
 .footer-logo-wrap .karma-mark-sm .karma-mark-word { font-size: 44px; }
+.chalk-line {
+  font-family: "Brush Script MT", "Segoe Script", "Snell Roundhand", cursive;
+  text-align: center;
+  color: var(--karma-purple);
+  font-size: clamp(16px, 1.7vw, 20px);
+  line-height: 1.5;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 4px 24px 18px;
+  opacity: 0.85;
+}
+.chalk-line .chalk-attr { display: block; font-size: 0.8em; opacity: 0.7; margin-top: 2px; }
 
 /* photo embeds — client review build */
 .photo-slot{overflow:hidden;}
@@ -1231,14 +1260,15 @@ footer {
     <div class="hero-photo" aria-hidden="true" style="background:linear-gradient(180deg,#4d2870 0%,#422360 55%,#140a20 100%);"></div>
     <div class="hero-inner">
       <div class="hero-text">
-        <h1>KARMA BAR<br>+ KITCHEN <span class="hero-for-all">For All</span></h1>
-        <p class="hero-copy">A proper dive in North Knoxville. Cold beer, cocktails, pool, darts, and a patio that's pet-friendly. Open seven days.</p>
+        <h1>KARMA BAR<br><span class="hero-kitchen">+ Kitchen</span> <span class="hero-for-all">For All</span></h1>
+        <p class="hero-copy"><strong class="hero-flag">Non-smoking bar &mdash; now open.</strong> A proper dive in North Knoxville. Cold beer, cocktails, pool, darts, and a pet-friendly patio. Open seven days.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="#menu" data-route="menu">See the Menu</a>
           <a class="btn" href="#contact" data-route="contact">Visit Us</a>
         </div>
       </div>
       <aside class="hero-gallery" aria-label="Inside Karma — photo gallery">
+        <p class="smoke-badge"><span class="smoke-badge-dot" aria-hidden="true">&#128685;</span> Now a <strong>non-smoking</strong> bar &mdash; pet-friendly patio &amp; open 7 days</p>
         <div class="gallery-stack">
           <figure class="polaroid">
             <div class="photo-slot"><img src="home-pool-players.jpg" alt="Regulars playing pool at Karma Bar" loading="lazy"></div>
@@ -1273,21 +1303,11 @@ footer {
     </div>
   </section>
 
-  <!-- §2 PULL QUOTE -->
-  <section class="pullquote" aria-label="From the chalkboard">
-    <div class="pullquote-inner">
-      <p class="pullquote-text heading-punch">
-        <span class="emph">Family</span> doesn't require shared genetics.<br>
-        And you know your found family is usually much more <span class="emph">fun</span> to sit next to.
-      </p>
-      <p class="pullquote-attr">From the chalkboard inside</p>
-    </div>
-  </section>
 
   <!-- §3 WHAT KARMA IS -->
   <section class="what" aria-label="What Karma is">
     <div class="wrap-wide">
-      <h2 class="heading-punch">Three things, done right.</h2>
+      <h2 class="heading-punch">Everyone&rsquo;s welcome here.</h2>
       <div class="what-grid">
         <div class="card">
           <div class="card-photo" style="background-image:url('home-bar.jpg');"></div>
@@ -1312,7 +1332,7 @@ footer {
   <section class="find" aria-label="Find us">
     <div class="wrap-wide">
       <div class="find-grid">
-        <div class="find-photo" style="background-image:url('home-family.jpg');">
+        <div class="find-photo" style="background-image:url('home-find-us.jpg');">
         </div>
         <div class="find-info">
           <div class="eyebrow">Visit</div>
@@ -1351,20 +1371,6 @@ footer {
     </div>
   </section>
 
-  <!-- §6 CALENDAR TEASER -->
-  <section class="cal-teaser" aria-label="What's coming up">
-    <div class="wrap-wide">
-      <div class="eyebrow">Upcoming</div>
-      <h2>Calendar</h2>
-      <div class="cal-empty">
-        <p class="lead">Something fun is always going down — check the calendar and follow our socials to keep up.</p>
-        <div class="btn-row" style="justify-content:center;">
-          <a class="btn btn-primary" href="#calendar" data-route="calendar">See Calendar</a>
-          <a class="btn" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">Follow @karmabarknox</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- §7 INSTAGRAM FEED -->
   <section class="ig-section" aria-label="Lately on Instagram">
@@ -1466,7 +1472,7 @@ footer {
     <div class="menu-anchors-inner">
       <a href="#apps">Apps &amp; Shareables</a>
       <a href="#burgers">Burgers &amp; Sandwiches</a>
-      <a href="#tenders">Tenders, Wings &amp; Baskets</a>
+      <a href="#wings">Wings</a>
     </div>
   </nav>
 
@@ -1476,17 +1482,11 @@ footer {
     <section class="menu-cat" id="apps">
       <header class="menu-cat-head"><h2>Apps &amp; Shareables</h2></header>
       <div class="menu-list">
-        <div class="menu-row"><div class="menu-row-name">Potato Skins</div><div class="menu-row-price">$12.13</div></div>
-        <div class="menu-row"><div class="menu-row-name">Cheezz Sticks</div><div class="menu-row-price">$10.40</div></div>
-        <div class="menu-row"><div class="menu-row-name">Cheezz Chonks</div><div class="menu-row-price">$10.40</div></div>
-        <div class="menu-row"><div class="menu-row-name">Fried Bloody Mary Pickles</div><div class="menu-row-price">$10.40</div></div>
-        <div class="menu-row"><div class="menu-row-name">Mini Corn Dog Basket</div><div class="menu-row-price">$10.40</div></div>
-        <div class="menu-row"><div class="menu-row-name">Spring Rolls</div><div class="menu-row-price">$9.10</div></div>
-        <div class="menu-row"><div class="menu-row-name">Truffle Chips</div><div class="menu-row-price">$7.15</div></div>
-        <div class="menu-row"><div class="menu-row-name">House Salad</div><div class="menu-row-price">$6.69</div></div>
-        <div class="menu-row"><div class="menu-row-name">Truffle Fries</div><div class="menu-row-price">$6.50</div></div>
-        <div class="menu-row"><div class="menu-row-name">Sweet Fries</div><div class="menu-row-price">$6.50</div></div>
-        <div class="menu-row"><div class="menu-row-name">Stick O' Shrimp</div><div class="menu-row-price">$6.50</div></div>
+        <div class="menu-row"><div class="menu-row-name">Spring Rolls<span class="menu-row-desc">The Ho family&rsquo;s recipe, fried crispy &amp; served with sweet chili sauce for dipping.</span></div><div class="menu-row-price">$9.10</div></div>
+        <div class="menu-row"><div class="menu-row-name">Cheezz Sticks<span class="menu-row-desc">Hand-cut, breaded premium mozzarella fried crispy. Served with house-made tomato gravy or ranch for dipping.</span></div><div class="menu-row-price">$10.40</div></div>
+        <div class="menu-row"><div class="menu-row-name">Potato Skins<span class="menu-row-desc">Crispy potato halves topped with melted cheddar-jack &amp; bacon, with house-made ranch. Step them up to Philly-Style.</span></div><div class="menu-row-price">$11.70</div></div>
+        <div class="menu-row"><div class="menu-row-name">Truffle Fries<span class="menu-row-desc">Crispy, fried shoestring potatoes dusted with our black truffle seasoning.</span></div><div class="menu-row-price">$6.50</div></div>
+        <div class="menu-row"><div class="menu-row-name">House Salad<span class="menu-row-desc">Baby field greens, tomato, carrot, cucumber, sweet onion &amp; cheddar-jack. Your choice of dressing.</span></div><div class="menu-row-price">$6.50</div></div>
       </div>
     </section>
 
@@ -1494,23 +1494,20 @@ footer {
     <section class="menu-cat" id="burgers">
       <header class="menu-cat-head"><h2>Burgers &amp; Sandwiches</h2></header>
       <div class="menu-list">
-        <div class="menu-row"><div class="menu-row-name">Okie Smash Burger · Double</div><div class="menu-row-price">$17.05</div></div>
-        <div class="menu-row"><div class="menu-row-name">Philly</div><div class="menu-row-price">$15.47</div></div>
-        <div class="menu-row"><div class="menu-row-name">Classic BLT</div><div class="menu-row-price">$13.48</div></div>
-        <div class="menu-row"><div class="menu-row-name">Okie Smash Burger · Single</div><div class="menu-row-price">$13.37</div></div>
-        <div class="menu-row"><div class="menu-row-name">The Huey</div><div class="menu-row-price">$13.03</div></div>
-        <div class="menu-row"><div class="menu-row-name">Griddled Frank</div><div class="menu-row-price">$12.13</div></div>
-        <div class="menu-row"><div class="menu-row-name">Jane's Grilled Cheese</div><div class="menu-row-price">$9.10</div></div>
+        <div class="menu-row"><div class="menu-row-name">Okie Smash Burger · Double<span class="menu-row-desc">Two Angus patties &amp; onions smashed &amp; griddled on a toasted brioche bun with lettuce, tomato, American cheese &amp; house burger sauce.</span></div><div class="menu-row-price">$15.60</div></div>
+        <div class="menu-row"><div class="menu-row-name">Philly<span class="menu-row-desc">Thinly sliced sirloin or chicken sauteed with bell pepper, onion &amp; mushroom, melty cheese blend on a griddled hoagie.</span></div><div class="menu-row-price">$14.30</div></div>
+        <div class="menu-row"><div class="menu-row-name">Okie Smash Burger · Single<span class="menu-row-desc">Angus patty &amp; onions smashed &amp; griddled on a toasted brioche bun with lettuce, tomato, American cheese &amp; house burger sauce.</span></div><div class="menu-row-price">$11.70</div></div>
+        <div class="menu-row"><div class="menu-row-name">The Huey<span class="menu-row-desc">1/2-inch Cajun-spiced bologna, scored &amp; fried, on a griddled brioche bun with American cheese, onion, tomato, lettuce, pickle, mayo &amp; mustard.</span></div><div class="menu-row-price">$11.70</div></div>
+        <div class="menu-row"><div class="menu-row-name">Griddled Frank<span class="menu-row-desc">Nathan&rsquo;s all-beef hot dog scored &amp; griddled on a toasted New England bun with mustard &amp; fresh onion, plus hot dog chili sauce.</span></div><div class="menu-row-price">$11.70</div></div>
+        <div class="menu-row"><div class="menu-row-name">Jane&rsquo;s Grilled Cheese<span class="menu-row-desc">Deli-American cheese melted between two slices of butter-griddled sourdough.</span></div><div class="menu-row-price">$9.10</div></div>
       </div>
     </section>
 
-    <!-- Tenders, Wings & Baskets -->
-    <section class="menu-cat" id="tenders">
-      <header class="menu-cat-head"><h2>Tenders, Wings &amp; Baskets</h2></header>
+    <!-- Wings -->
+    <section class="menu-cat" id="wings">
+      <header class="menu-cat-head"><h2>Wings</h2></header>
       <div class="menu-list">
-        <div class="menu-row"><div class="menu-row-name">Traditional Wings (10)</div><div class="menu-row-price">$19.50</div></div>
-        <div class="menu-row"><div class="menu-row-name">Traditional Wings (5)</div><div class="menu-row-price">$13.00</div></div>
-        <div class="menu-row"><div class="menu-row-name">Chicken Tender Basket</div><div class="menu-row-price">$12.70</div></div>
+        <div class="menu-row"><div class="menu-row-name">Traditional Wings (10)<span class="menu-row-desc">All-natural, bone-in jumbo wings fried crispy &amp; tossed in your choice of sauce or rub. Served with celery, carrots &amp; ranch or bleu cheese.</span></div><div class="menu-row-price">$19.50</div></div>
       </div>
     </section>
 
@@ -1527,7 +1524,7 @@ footer {
     <div class="page-hero-photo" style="background-image:linear-gradient(180deg,rgba(20,16,26,0.5),rgba(10,7,8,0.88)),url('home-shooters-wide.jpg');background-size:cover;background-position:center;"></div>
     <div class="wrap-text page-hero-inner">
       <div class="eyebrow">Events</div>
-      <h1 class="heading-punch">Something's always cooking.</h1>
+      <h1 class="heading-punch">What's going on.</h1>
       <p class="lead" style="margin-top:24px;max-width:540px;">Trivia, watch parties, live music, and whatever else we decide is worth doing. Check back, or follow us on Instagram for the day-of.</p>
     </div>
   </section>
@@ -1564,7 +1561,7 @@ footer {
 <article class="page" id="page-contact" data-page="contact">
 
   <section class="page-hero">
-    <div class="page-hero-photo" style="background-image:linear-gradient(180deg,rgba(20,16,26,0.5),rgba(10,7,8,0.9)),url('home-family.jpg');background-size:cover;background-position:center;"></div>
+    <div class="page-hero-photo" style="background-image:linear-gradient(180deg,rgba(20,16,26,0.5),rgba(10,7,8,0.9)),url('contact-hero.jpg');background-size:cover;background-position:center;"></div>
     <div class="wrap-text page-hero-inner">
       <div class="eyebrow">Contact</div>
       <h1 class="heading-punch">Last Call</h1>
@@ -1671,6 +1668,7 @@ footer {
       </ul>
     </div>
   </div>
+  <p class="chalk-line">&ldquo;Family doesn&rsquo;t require shared genetics &mdash; and your found family is usually more fun to sit next to.&rdquo; <span class="chalk-attr">&mdash; from the chalkboard inside</span></p>
   <div class="footer-bottom">
     © <span id="year">2026</span> Karma Bar. For all. Site by Thirty3 Project.
   </div>
