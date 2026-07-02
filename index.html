@@ -342,7 +342,7 @@ section { padding: var(--pad-section) 0; }
 .nav-links a:hover, .nav-links a:focus-visible,
 .nav-links a.is-active { color: var(--karma-amber); }
 .nav-tel { color: var(--karma-amber); margin-right: 16px; }
-.nav-cta {
+.nav-links a.nav-cta {
   font-family: var(--font-punch);
   font-size: 16px;
   font-weight: 600;
@@ -353,7 +353,7 @@ section { padding: var(--pad-section) 0; }
   color: var(--karma-black);
   border: 1px solid var(--karma-amber);
 }
-.nav-cta:hover, .nav-cta:focus-visible { background: var(--karma-cream); border-color: var(--karma-cream); }
+.nav-links a.nav-cta:hover, .nav-links a.nav-cta:focus-visible { background: var(--karma-cream); color: var(--karma-black); border-color: var(--karma-cream); }
 .menu-toggle { display: none; font-family: var(--font-punch); letter-spacing: 0.15em; text-transform: uppercase; color: var(--karma-cream); font-size: 14px; }
 
 @media (max-width: 768px) {
@@ -518,7 +518,7 @@ section { padding: var(--pad-section) 0; }
 }
 @media (max-width: 768px) { .find-grid { grid-template-columns: 1fr; } }
 .find-photo {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   background: linear-gradient(135deg, #14101a, #0a0708);
   position: relative;
 }
@@ -975,13 +975,15 @@ footer {
   font-size: 10px;
 }
 .polaroid-caption {
-  position: absolute; bottom: 12px; left: 10px; right: 10px;
+  position: absolute; bottom: 0; left: 0; right: 0;
   text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 15px; letter-spacing: 0.06em;
+  font-family: var(--font-body);
+  font-size: 15px; letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--karma-cream); font-weight: 600;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.8);
+  color: #ffffff; font-weight: 600;
+  padding: 26px 10px 10px;
+  background: linear-gradient(to top, rgba(8,5,7,0.94) 0%, rgba(8,5,7,0.75) 45%, rgba(8,5,7,0) 100%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.85);
 }
 
 /* ============================================================
@@ -1159,13 +1161,13 @@ footer {
 .nav-links a:hover, .nav-links a:focus-visible,
 .nav-links a.is-active { color: var(--karma-amber); }
 .menu-toggle { color: var(--karma-purple); }
-.nav-cta {
+.nav-links a.nav-cta {
   background: var(--karma-purple);
   color: #ffffff;
   border-color: var(--karma-purple);
   font-weight: 700;
 }
-.nav-cta:hover, .nav-cta:focus-visible {
+.nav-links a.nav-cta:hover, .nav-links a.nav-cta:focus-visible {
   background: var(--karma-amber);
   border-color: var(--karma-amber);
   color: var(--karma-black);
