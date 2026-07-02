@@ -188,6 +188,7 @@
   --karma-purple: #422360;
   --karma-olive: #5f6334;
   --karma-amber: #e8a33d;
+  --karma-amber-dark: #9a6410;  /* burnt amber for amber-colored text on LIGHT bg — 4.99:1 on white (WCAG AA) */
 
   --karma-muted: #b8ada0;   /* spec-derived: lighter-than-cream's grandmother for de-emphasis. 4.5:1+ on black. */
   --karma-rule: #2a2228;    /* subtle dividers */
@@ -396,7 +397,7 @@ section { padding: var(--pad-section) 0; }
 .photo-slot-label {
   position: absolute; top: 16px; left: 16px;
   font-family: var(--font-punch);
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(245, 238, 224, 0.4);
@@ -913,7 +914,7 @@ footer {
 .karma-mark-md .karma-mark-word { font-size: 56px; }
 .karma-mark-md .karma-mark-sub  { font-size: 13px; margin-top: 6px; }
 .karma-mark-sm .karma-mark-word { font-size: 26px; letter-spacing: 0.06em; }
-.karma-mark-sm .karma-mark-sub  { font-size: 9px; margin-top: 2px; letter-spacing: 0.28em; }
+.karma-mark-sm .karma-mark-sub  { font-size: 13px; margin-top: 2px; letter-spacing: 0.22em; }
 
 /* Light-variant for placement on dark backgrounds where AA matters
    (logo exception applies for the brand mark; this gives a visible cream halo) */
@@ -972,7 +973,7 @@ footer {
   background: rgba(245, 238, 224, 0.06);
   border: 1px dashed rgba(245, 238, 224, 0.28);
   color: rgba(245, 238, 224, 0.55);
-  font-size: 10px;
+  font-size: 13px;
 }
 .polaroid-caption {
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -1084,7 +1085,7 @@ footer {
 .ig-card-label {
   position: relative; z-index: 1;
   font-family: var(--font-punch);
-  font-size: 11px; letter-spacing: 0.12em;
+  font-size: 13px; letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -1159,7 +1160,7 @@ footer {
 .site-nav .karma-mark { filter: none; }
 .nav-links a, .nav-tel { color: var(--karma-purple); }
 .nav-links a:hover, .nav-links a:focus-visible,
-.nav-links a.is-active { color: var(--karma-amber); }
+.nav-links a.is-active { color: var(--karma-amber-dark); }
 .menu-toggle { color: var(--karma-purple); }
 .nav-links a.nav-cta {
   background: var(--karma-purple);
@@ -1185,10 +1186,10 @@ footer {
 .footer-col h4 { color: var(--karma-purple); font-size: 16px; }
 .footer-col p, .footer-col li { color: var(--karma-black); font-size: 17px; line-height: 1.75; }
 .footer-col a { color: var(--karma-purple); }
-.footer-col a:hover { color: var(--karma-amber); border-color: var(--karma-amber); }
+.footer-col a:hover { color: var(--karma-amber-dark); border-color: var(--karma-amber-dark); }
 .footer-col .muted { color: rgba(0,0,0,0.6) !important; font-size: 15px !important; }
 .footer-social a { color: var(--karma-purple); font-size: 16px; }
-.footer-social a:hover { color: var(--karma-amber); }
+.footer-social a:hover { color: var(--karma-amber-dark); }
 .footer-bottom {
   background: #ffffff;
   color: rgba(66, 35, 96, 0.65);
@@ -1245,7 +1246,7 @@ footer {
       <li><a href="#menu" data-route="menu">Menu</a></li>
       <li><a href="#calendar" data-route="calendar">Calendar</a></li>
       <li><a href="#contact" data-route="contact">Contact</a></li>
-      <li><a class="nav-cta" href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener">DoorDash</a></li>
+      <li><a class="nav-cta" href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener noreferrer">DoorDash</a></li>
     </ul>
   </div>
 </nav>
@@ -1355,7 +1356,7 @@ footer {
             </dd>
           </dl>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://maps.google.com/?q=815+Merchant+Drive+Knoxville+TN+37912" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-primary" href="https://maps.google.com/?q=815+Merchant+Drive+Knoxville+TN+37912" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </div>
         </div>
       </div>
@@ -1369,7 +1370,7 @@ footer {
         <h3>Can't make it in?</h3>
         <p>We're on DoorDash. Same food, same prices, your couch.</p>
       </div>
-      <a class="btn btn-primary" href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener">Order on DoorDash →</a>
+      <a class="btn btn-primary" href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener noreferrer">Order on DoorDash →</a>
     </div>
   </section>
 
@@ -1382,32 +1383,32 @@ footer {
           <div class="eyebrow">From the gram</div>
           <h2>Lately at Karma.</h2>
         </div>
-        <a class="btn" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">@karmabarknox →</a>
+        <a class="btn" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">@karmabarknox →</a>
       </div>
       <!-- DEV NOTE: At production, drop in a live Instagram feed widget (LightWidget, SnapWidget, or Instagram Graph API).
            Each .ig-card becomes a real post linking out to instagram.com. The horizontal scroll + scroll-snap stays. -->
       <div class="ig-scroll">
-        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">
+        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">
           <span class="ig-card-icon" aria-hidden="true"></span>
           <span class="ig-card-label">IG · Latest post</span>
         </a>
-        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">
+        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">
           <span class="ig-card-icon" aria-hidden="true"></span>
           <span class="ig-card-label">IG · Game day</span>
         </a>
-        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">
+        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">
           <span class="ig-card-icon" aria-hidden="true"></span>
           <span class="ig-card-label">IG · Trivia</span>
         </a>
-        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">
+        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">
           <span class="ig-card-icon" aria-hidden="true"></span>
           <span class="ig-card-label">IG · Happy hour</span>
         </a>
-        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">
+        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">
           <span class="ig-card-icon" aria-hidden="true"></span>
           <span class="ig-card-label">IG · Patio</span>
         </a>
-        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">
+        <a class="ig-card" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">
           <span class="ig-card-icon" aria-hidden="true"></span>
           <span class="ig-card-label">IG · The crew</span>
         </a>
@@ -1430,7 +1431,7 @@ footer {
         <h1 class="heading-punch">Real. Good. Bar. Food.</h1>
         <p class="lead" style="margin-top:24px;max-width:560px;">Proper bar food. Burgers, wings, tenders, sandwiches. Comfort food that goes with everything we pour. Order in person or get it delivered through DoorDash.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener">Order on DoorDash →</a>
+          <a class="btn btn-primary" href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener noreferrer">Order on DoorDash →</a>
         </div>
       </div>
       <aside class="hero-gallery" aria-label="Food gallery">
@@ -1538,7 +1539,7 @@ footer {
         <h2>Coming soon</h2>
         <p>We're putting together what's next. Check back, or follow us on Instagram for the latest.</p>
         <div class="btn-row" style="justify-content:center;margin-top:24px;">
-          <a class="btn btn-primary" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">Follow @karmabarknox</a>
+          <a class="btn btn-primary" href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">Follow @karmabarknox</a>
         </div>
       </div>
 
@@ -1585,7 +1586,7 @@ footer {
           </dl>
           <div class="btn-row">
             <a class="btn btn-primary" href="tel:+18652217412">Call</a>
-            <a class="btn" href="https://maps.google.com/?q=815+Merchant+Drive+Knoxville+TN+37912" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn" href="https://maps.google.com/?q=815+Merchant+Drive+Knoxville+TN+37912" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </div>
         </div>
         <div class="contact-map" aria-label="Map of Karma Bar location">
@@ -1655,10 +1656,10 @@ footer {
     </div>
     <div class="footer-col">
       <h4>Order</h4>
-      <p><a href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener">DoorDash →</a></p>
+      <p><a href="https://www.doordash.com/store/karma-kitchen-knoxville-35210363/94152154/" target="_blank" rel="noopener noreferrer">DoorDash →</a></p>
       <div class="footer-social">
-        <a href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/karmabarknox" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/karmabarknox/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/karmabarknox" target="_blank" rel="noopener noreferrer">Facebook</a>
       </div>
     </div>
     <div class="footer-col">
